@@ -3,16 +3,15 @@ WITH orders AS(
     SELECT
         order_id,
         user_id,
-        gender as status,
-        status as gender,
+        gender,
+        status,
         created_at,
         shipped_at,
         returned_at,
         delivered_at,
         num_of_item
     FROM
-        {{ source('raw', 'orders_v2')}}
-
+        {{ref('stg_orders')}}
 )
 
 SELECT
