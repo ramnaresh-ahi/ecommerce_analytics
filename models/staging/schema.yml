@@ -112,29 +112,6 @@ models:
       - name: sku
         description: "Stock keeping unit(SKU) of the product."
   
-  - name: stg_products
-    description: "This table contains all information of products."
-    columns:
-      - name: prod_id
-        description: "This is a primary key for this table."
-        tests:
-          - not_null
-          - unique
-      - name: cost
-        description: "Cost of the product."
-      - name: name
-        description: "Name of the product."
-      - name: prod_category
-        description: "Category to which the product belongs."
-      - name: brand
-        description: "Brand of the product."
-      - name: retail_price
-        description: "Retail price of the product."
-      - name: department
-        description: "Department to which the product belongs."
-      - name: sku
-        description: "Stock keeping unit(SKU) of the product."
-  
   - name: stg_users
     description: "This table contains all information of users."
     columns:
