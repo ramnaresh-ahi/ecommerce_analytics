@@ -1,0 +1,20 @@
+   
+
+version: 2
+
+sources:
+  - name: raw
+    database: ecommerce-analysis-464405
+    schema: raw_data
+    tables:
+      - name: distribution_centers
+      - name: events
+      - name: users
+      - name: inventory_items
+      - name: order_items
+      - name: orders_v2
+      - name: products
+
+    
+    
+    
