@@ -1,0 +1,54 @@
+
+version: 2
+models:
+  - name: fact_ecommerce_analytics
+    description: "This is a fact table that contains primary keys of dim_ tables for building relationship with them."
+    columns:
+      - name: analytic_id 
+        description: "This is a primary key or surrogate key this table."
+        tests:
+          - not_null
+          - unique
+      - name: order_id
+        description: "This is a primary of dim_order table that used to build relationship with fact_ecommerce_analytics table."
+        tests:
+          - relationships:
+              to: ref('dim_orders')
+              field: order_id
+      - name: user_id
+        description: "This is a primary key of dim_users table that used to builed relationship with fact_ table."
+        tests:
+          - relationships:
+              to: ref('dim_users')
+              field: user_id
+      - name: order_item_id
+        description: "This is a primary key of dim_order_items table that used to build relationship with fact_ table."
+        tests:
+          - relationships:
+              to: ref('dim_order_items')
+              field: order_item_id
+      - name: prod_id
+        description: "This is a primary key of dim_products table that used to build relationship with fact_ table."
+        tests:
+          - relationships:
+              to: ref('dim_products')
+              field: prod_id
+      - name: inventory_id
+        description: "This is a primary key of dim_inventory table that used to build relationship with fact_ table."
+        tests:
+          - relationships:
+              to: ref('dim_inventory')
+              field: inventory_id
+      - name: dist_id
+        description: "This is a primary key of dim_distributions table that used to build relationship with fact_ table."
+        tests:
+          - relationships:
+              to: ref('dim_distributions')
+              field: dist_id
+      - name: event_id
+        description: "This is a primary key of dim_events table that used to build relationship with fact_ table."
+        tests:
+          - relationships:
+              to: ref('dim_events')
+              field: event_id
+        
