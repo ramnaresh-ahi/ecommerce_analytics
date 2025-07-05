@@ -76,6 +76,13 @@ ecommerce_analytics/
 └── README.md                   # 📘 You're here
 ```
 
+## 📄 Documentation
+
+View the complete interactive dbt documentation, including DAGs, model lineage, and descriptions:
+
+🔗 [ecommerce_analytics Documentation](https://ramnaresh-ahi.github.io/ecommerce_analytics/#!/overview)
+
+
 ---
 
 ## 🪰 Tools Used
