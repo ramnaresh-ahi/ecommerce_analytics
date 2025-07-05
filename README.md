@@ -204,7 +204,7 @@ Each record is uniquely identified using a surrogate `analytic_id`.
 
 **Name**: *\[Ramnaresh Ahirwar]*
 **Role**: Analytics Engineer
-**GitHub**: [your-username](https://github.com/ramnaresh-ahi)
+**GitHub**: [github_profile](https://github.com/ramnaresh-ahi)
 
 ---
 
